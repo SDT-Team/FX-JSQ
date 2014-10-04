@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="top|center">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text=""
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_height="100dp"
+		android:text=""
+		android:layout_width="wrap_content"/>
+
+	<FrameLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:background="#202020"
+		android:layout_margin="1dp">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="一元方程运算"
+			android:layout_width="fill_parent"
+			android:onClick="open1"
+			style="?android:attr/buttonBarButtonStyle"/>
+
+		<ImageView
+			android:layout_height="49dp"
+			android:layout_width="49dp"
+			android:src="@drawable/e"/>
+
+	</FrameLayout>
+
+	<FrameLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:background="#202020"
+		android:layout_margin="1dp">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="勾股运算"
+			android:layout_width="fill_parent"
+			android:onClick="open3"
+			style="?android:attr/buttonBarButtonStyle"/>
+
+		<ImageView
+			android:layout_height="49dp"
+			android:layout_width="49dp"
+			android:src="@drawable/d"/>
+
+	</FrameLayout>
+
+	<FrameLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:background="#202020"
+		android:layout_margin="1dp">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="一次函数的坐标系解析式运算"
+			android:layout_width="fill_parent"
+			android:onClick="open2"
+			style="?android:attr/buttonBarButtonStyle"/>
+
+		<ImageView
+			android:layout_height="49dp"
+			android:layout_width="49dp"
+			android:src="@drawable/c"/>
+
+	</FrameLayout>
+
+	<FrameLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:background="#202020"
+		android:layout_margin="1dp">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="扇形计算器"
+			android:layout_width="match_parent"
+			android:onClick="open4"
+			style="?android:attr/buttonBarButtonStyle"/>
+
+		<ImageView
+			android:layout_height="49dp"
+			android:layout_width="49dp"
+			android:src="@drawable/b"/>
+
+	</FrameLayout>
+
+	<FrameLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:background="#202020"
+		android:layout_margin="1dp">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="函数画图助手"
+			android:layout_width="match_parent"
+			android:onClick="open5"
+			style="?android:attr/buttonBarButtonStyle"/>
+
+		<ImageView
+			android:layout_height="49dp"
+			android:layout_width="49dp"
+			android:src="@drawable/a"/>
+
+	</FrameLayout>
+
+	<FrameLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:background="#202020"
+		android:layout_margin="1dp">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="统计计算器"
+			android:layout_width="match_parent"
+			android:onClick="open6"
+			style="?android:attr/buttonBarButtonStyle"/>
+
+		<ImageView
+			android:layout_height="49dp"
+			android:layout_width="49dp"
+			android:src="@drawable/f"/>
+
+	</FrameLayout>
+
+</LinearLayout>
+

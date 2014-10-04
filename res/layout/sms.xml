@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:gravity="center">
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="注意：将会花费一条短信的费用"
+		android:layout_width="match_parent"
+		android:id="@+id/smsTextView1"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_below="@id/smsTextView1">
+
+		<EditText
+			android:layout_height="80dp"
+			android:ems="10"
+			android:layout_width="wrap_content"
+			android:hint="写出你对这个软件的意见"
+			android:id="@+id/message"/>
+
+		<Button
+			android:layout_height="match_parent"
+			android:text="发送"
+			android:layout_width="match_parent"
+			android:onClick="send"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

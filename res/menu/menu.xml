@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+        android:id="@+id/XGJ"
+		android:icon="@drawable/ic_launcher" 
+		android:orderInCategory="0"
+		android:title="小工具" />
+	
+	<item
+        android:id="@+id/GY"
+		android:icon="@drawable/ic_launcher" 
+		android:orderInCategory="3"
+		android:title="关于" />
+	
+	<item
+        android:id="@+id/CAL"
+		android:icon="@drawable/ic_launcher" 
+		android:orderInCategory="2"
+		android:title="免责声明" />
+	
+	<item
+        android:id="@+id/SMS"
+		android:icon="@drawable/ic_launcher" 
+		android:orderInCategory="1"
+		android:title="意见反馈" />
+    
+</menu>
+

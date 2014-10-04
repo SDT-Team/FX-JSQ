@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_height="20dp"
+			android:layout_width="wrap_content"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text=""
+				android:layout_width="10dp"/>
+
+			<View
+				android:layout_height="match_parent"
+				android:background="?android:attr/dividerHorizontal"
+				android:layout_width="1dp"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="340dp"
+				android:orientation="vertical"
+				android:background="?android:attr/dividerVertical">
+
+				<View
+					android:layout_height="1dp"
+					android:background="?android:attr/dividerVertical"
+					android:layout_width="match_parent"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="0"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="338dp"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="0"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="338dp"
+					android:gravity="right"/>
+
+				<View
+					android:layout_height="1dp"
+					android:background="?android:attr/dividerVertical"
+					android:layout_width="match_parent"/>
+
+			</LinearLayout>
+
+			<View
+				android:layout_height="match_parent"
+				android:background="?android:attr/dividerHorizontal"
+				android:layout_width="1dp"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_height="20dp"
+			android:layout_width="wrap_content"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="center">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical">
+
+				<Button
+					android:layout_height="40dp"
+					style="?android:attr/buttonStyleSmall"
+					android:text="M+"
+					android:layout_width="50dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical">
+
+				<Button
+					android:layout_height="40dp"
+					style="?android:attr/buttonStyleSmall"
+					android:text="√"
+					android:layout_width="wrap_content"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical">
+
+				<Button
+					android:layout_height="40dp"
+					style="?android:attr/buttonStyleSmall"
+					android:text="±"
+					android:layout_width="wrap_content"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical">
+
+				<Button
+					android:layout_height="40dp"
+					style="?android:attr/buttonStyleSmall"
+					android:text="□"
+					android:layout_width="wrap_content"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical">
+
+				<Button
+					android:layout_height="40dp"
+					style="?android:attr/buttonStyleSmall"
+					android:text="←"
+					android:layout_width="wrap_content"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical">
+
+				<Button
+					android:layout_height="40dp"
+					style="?android:attr/buttonStyleSmall"
+					android:text="Del"
+					android:layout_width="wrap_content"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical">
+
+				<Button
+					android:layout_height="40dp"
+					style="?android:attr/buttonStyleSmall"
+					android:text="C"
+					android:layout_width="wrap_content"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

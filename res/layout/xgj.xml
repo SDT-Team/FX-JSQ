@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<View
+		android:layout_height="1dp"
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="match_parent"/>
+
+	<FrameLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:layout_margin="1dp">
+
+		<Button
+			android:layout_height="wrap_content"
+			style="?android:attr/buttonBarButtonStyle"
+			android:text="开根计算器"
+			android:layout_width="match_parent"
+			android:onClick="op1"/>
+
+		<ImageView
+			android:layout_height="49dp"
+			android:layout_width="49dp"
+			android:src="@drawable/kgj"/>
+
+	</FrameLayout>
+
+	<View
+		android:layout_height="1dp"
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="match_parent"/>
+
+	<FrameLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:layout_margin="1dp">
+
+		<Button
+			android:layout_height="wrap_content"
+			style="?android:attr/buttonBarButtonStyle"
+			android:text="大大的电灯泡"
+			android:layout_width="match_parent"
+			android:onClick="op2"/>
+
+		<ImageView
+			android:layout_height="49dp"
+			android:layout_width="49dp"
+			android:src="@drawable/ddp"/>
+
+	</FrameLayout>
+
+	<View
+		android:layout_height="1dp"
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="match_parent"/>
+
+	<FrameLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:layout_margin="1dp">
+
+		<Button
+			android:layout_height="wrap_content"
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_width="match_parent"
+			android:onClick="op3"
+			android:text="没有了。。。"/>
+
+		<ImageView
+			android:layout_height="49dp"
+			android:layout_width="49dp"
+			android:src="@drawable/myl"/>
+
+	</FrameLayout>
+
+	<View
+		android:layout_height="1dp"
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="match_parent"/>
+
+</LinearLayout>
+

@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="top|left|center">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="A点"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal">
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="180dp"
+			android:id="@+id/A_x"
+			android:hint="A点的x轴坐标"
+			android:inputType="number"
+			android:digits="1234567890.-"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="180dp"
+			android:id="@+id/A_y"
+			android:hint="A点的y轴坐标"
+			android:inputType="number"
+			android:digits="1234567890.-"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="B点"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal">
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="180dp"
+			android:id="@+id/B_x"
+			android:hint="B点的x轴坐标"
+			android:inputType="number"
+			android:digits="1234567890.-"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="180dp"
+			android:id="@+id/B_y"
+			android:hint="B点的y轴坐标"
+			android:inputType="number"
+			android:digits="1234567890.-"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="函数表格"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal">
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="180dp"
+			android:hint="起始值"
+			android:inputType="number"
+			android:digits="1234567890.-"
+			android:id="@+id/sta"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="180dp"
+			android:hint="间隔值"
+			android:inputType="number"
+			android:digits="1234567890."
+			android:id="@+id/inte"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<FrameLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:background="#202020"
+			android:layout_margin="1dp">
+
+			<Button
+				android:layout_height="wrap_content"
+				android:text="计算"
+				android:layout_width="178dp"
+				android:onClick="sta"
+				style="?android:attr/buttonBarButtonStyle"/>
+
+		</FrameLayout>
+
+		<FrameLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:background="#202020"
+			android:layout_margin="1dp">
+
+			<Button
+				android:layout_height="wrap_content"
+				android:text="C"
+				android:layout_width="180dp"
+				android:onClick="C"
+				style="?android:attr/buttonBarButtonStyle"/>
+
+		</FrameLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="计算结果"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"/>
+
+	</LinearLayout>
+
+	<View
+		android:layout_height="1dp"
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="match_parent"/>
+
+	<LinearLayout
+		android:layout_height="60dp"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="解析式："
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="---"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:id="@+id/ret"/>
+
+	</LinearLayout>
+
+	<View
+		android:layout_height="1dp"
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="match_parent"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="偏移值："
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="---"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:id="@+id/E"/>
+
+	</LinearLayout>
+
+	<View
+		android:layout_height="1dp"
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="match_parent"/>
+
+	<FrameLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:background="#202020">
+
+		<Button
+			android:layout_height="30dp"
+			style="?android:attr/buttonBarButtonStyle"
+			android:text="点击查看图像"
+			android:layout_width="match_parent"
+			android:onClick="pic"/>
+
+	</FrameLayout>
+
+	<View
+		android:layout_height="1dp"
+		android:background="#3F3F3F"
+		android:layout_width="match_parent"/>
+
+	<ScrollView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content">
+
+		<TableLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:background="#202020"
+			android:layout_margin="1dip">
+
+			<TableRow>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="函数表格"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="117dp"
+					android:gravity="center"
+					android:background="#000000"
+					android:layout_margin="1dip"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="X轴坐标"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="117dp"
+					android:gravity="center"
+					android:background="#000000"
+					android:layout_margin="1dip"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="Y轴坐标"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="117dp"
+					android:gravity="center"
+					android:background="#000000"
+					android:layout_margin="1dip"/>
+
+			</TableRow>
+
+			<TableRow>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="x轴交点"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="117dp"
+					android:gravity="center"
+					android:background="#000000"
+					android:layout_margin="1dip"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="---"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="117dp"
+					android:gravity="center"
+					android:background="#000000"
+					android:layout_margin="1dip"
+					android:id="@+id/x_x"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="---"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="117dp"
+					android:gravity="center"
+					android:background="#000000"
+					android:layout_margin="1dip"
+					android:id="@+id/x_y"/>
+
+			</TableRow>
+
+			<TableRow>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="y轴交点"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="117dp"
+					android:gravity="center"
+					android:background="#000000"
+					android:layout_margin="1dip"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="---"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="117dp"
+					android:gravity="center"
+					android:background="#000000"
+					android:layout_margin="1dip"
+					android:id="@+id/y_x"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="---"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="117dp"
+					android:gravity="center"
+					android:background="#000000"
+					android:layout_margin="1dip"
+					android:id="@+id/y_y"/>
+
+			</TableRow>
+
+			<TableRow>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="1"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="117dp"
+					android:gravity="center"
+					android:background="#000000"
+					android:layout_margin="1dip"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="---"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="117dp"
+					android:gravity="center"
+					android:background="#000000"
+					android:layout_margin="1dip"
+					android:id="@+id/a_x"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="---"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="117dp"
+					android:gravity="center"
+					android:background="#000000"
+					android:layout_margin="1dip"
+					android:id="@+id/a_y"/>
+
+			</TableRow>
+
+			<TableRow>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="2"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="117dp"
+					android:gravity="center"
+					android:background="#000000"
+					android:layout_margin="1dip"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="---"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="117dp"
+					android:gravity="center"
+					android:background="#000000"
+					android:layout_margin="1dip"
+					android:id="@+id/b_x"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="---"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="117dp"
+					android:gravity="center"
+					android:background="#000000"
+					android:layout_margin="1dip"
+					android:id="@+id/b_y"/>
+
+			</TableRow>
+
+			<TableRow>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="3"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="117dp"
+					android:gravity="center"
+					android:background="#000000"
+					android:layout_margin="1dip"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="---"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="117dp"
+					android:gravity="center"
+					android:background="#000000"
+					android:layout_margin="1dip"
+					android:id="@+id/c_x"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="---"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="117dp"
+					android:gravity="center"
+					android:background="#000000"
+					android:layout_margin="1dip"
+					android:id="@+id/c_y"/>
+
+			</TableRow>
+
+		</TableLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

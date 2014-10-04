@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="top|center"
+	android:id="@+id/A">
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="大大的电灯泡"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="wrap_content"
+		android:textColor="#656565"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="开启大电灯泡！"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:textColor="#656565"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="right">
+
+			<Switch
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/ddp"
+				android:textOn="╮(￣▽￣)"
+				android:textOff="(╯‵□′)╯︵ ┴─┴"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="开启LED！"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:textColor="#656565"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="right">
+
+			<Switch
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/led"
+				android:textOff="(╬￣皿￣)"
+				android:textOn="︿(￣︶￣)︿"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<View
+		android:layout_height="100dp"
+		android:layout_width="1dp"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:background="#3B3B3B"
+		android:layout_margin="1dip">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_margin="3dip"
+			android:background="#000000"
+			android:gravity="top|center"
+			android:id="@+id/B">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="设置我的电灯泡"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:gravity="center"
+				android:textColor="#656565"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="暂时没有"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:textColor="#656565"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:background="#3B3B3B"
+		android:layout_margin="1dip">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_margin="3dip"
+			android:background="#000000"
+			android:gravity="top|center"
+			android:id="@+id/C">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="设置我的LED"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:gravity="center"
+				android:textColor="#656565"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="RED"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="70dp"
+					android:textColor="#FF0000"/>
+
+				<LinearLayout
+					android:layout_height="match_parent"
+					android:layout_width="30dp"
+					android:background="#000000"
+					android:id="@+id/cr"/>
+
+				<SeekBar
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:id="@+id/red"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="GREEN"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="70dp"
+					android:textColor="#00FF00"
+					android:textSize="21sp"/>
+
+				<LinearLayout
+					android:layout_height="match_parent"
+					android:layout_width="30dp"
+					android:background="#000000"
+					android:id="@+id/cg"/>
+
+				<SeekBar
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:id="@+id/green"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="BLUE"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="70dp"
+					android:textColor="#0000FF"/>
+
+				<LinearLayout
+					android:layout_height="match_parent"
+					android:layout_width="30dp"
+					android:background="#000000"
+					android:id="@+id/cb"/>
+
+				<SeekBar
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:id="@+id/blue"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="亮度"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="70dp"
+					android:textColor="#656565"/>
+
+				<LinearLayout
+					android:layout_height="match_parent"
+					android:layout_width="30dp"
+					android:background="#000000"
+					android:alpha="1"
+					android:id="@+id/cl"/>
+
+				<SeekBar
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:id="@+id/light"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

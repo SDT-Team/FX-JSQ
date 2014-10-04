@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mycompany.dddkaj"
+    android:versionCode="1"
+    android:versionName="5.0">
+
+    <uses-sdk 
+        android:minSdkVersion="8" 
+        android:targetSdkVersion="11" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+		android:theme="@android:style/Theme.Holo">
+		
+        <activity
+            android:name="MainActivity"
+			android:label="一元方程计算"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait">
+        </activity>
+		
+		<activity
+            android:name="Manu"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait">
+			<intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+		</activity>
+		
+		<activity
+			android:label="免责声明"
+            android:name="Cal"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait">
+		</activity>
+		
+		<activity
+			android:label="一次函数直角坐标系解析式运算"
+            android:name="OCS"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait">
+		</activity>
+		
+		<activity
+            android:name="Ry"
+			android:label="勾股计算"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait">
+		</activity>
+		
+		<activity
+            android:name="GY"
+			android:label="关于"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait">
+		</activity>
+		
+		<activity
+            android:name="XGJ"
+			android:label="小工具"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:icon="@drawable/wj">
+		</activity>
+		
+		<activity
+            android:name="KGJ"
+			android:label="开根计算器"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait">
+		</activity>
+		
+		<!--<activity
+            android:name="SMS"
+			android:label="意见反馈"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait">
+		</activity>-->
+		
+		<activity
+            android:name="ROUND"
+			android:label="扇形计算器"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait">
+		</activity>
+		
+		<activity
+            android:name="COR"
+			android:label="函数画图助手"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait">
+		</activity>
+		
+		<activity
+            android:name="FC"
+			android:label="统计计算器"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait">
+		</activity>
+		
+		<!--<activity
+            android:name="GEOMETRY"
+			android:label="几何计算"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait">
+		</activity>-->
+		
+		<activity
+            android:name="chart"
+			android:label="函数图像">
+		</activity>
+		
+		<activity
+            android:name="LED"
+			android:label="大大的电灯泡"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait">
+		</activity>
+		
+    </application>
+	
+	<uses-permission android:name="android.permission.CAMERA"/>
+
+</manifest>
